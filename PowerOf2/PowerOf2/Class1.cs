@@ -10,6 +10,7 @@ namespace PowerOf2
     {
         public void power()
         {
+           
             Console.WriteLine("enter number : ");
             int n = Convert.ToInt32(Console.ReadLine());
             int value = 2;
