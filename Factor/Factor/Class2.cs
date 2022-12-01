@@ -16,24 +16,24 @@ namespace Factor
             n = Convert.ToInt32(Console.ReadLine());
             for (int i = 2; i <= n; i++)
             {
+                bool isPrimeNumber = true;
                 int fact = 1;
-                int count = 0;
+                
                 for(int j = 2; j <= i; j++)
                 {
                     if (i % j == 0)
                     {
-                        count++;
-                    }
-                    else if (count >= 2)
-                    {
+                        isPrimeNumber = false;
                         break;
                     }
-                    else if (count < 2)
-                    {
-                        fact = fact * i;
-                    }
-                }Console.WriteLine(fact);
-            }
-        }
-    }
-}
+                 }
+                     if (isPrimeNumber)
+                   
+                        Console.WriteLine("{0}",i);
+                         fact=fact*i;
+               }
+               Console.WriteLine("factorial of prime numbers : " +fact);
+          }
+      }
+ }
+ 
