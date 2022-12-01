@@ -13,10 +13,10 @@ namespace Factor
             int n;
         
             Console.WriteLine("Enter number for to print prime number");
-            n=Convert.ToInt32(Console.ReadLine())
+            n = Convert.ToInt32(Console.ReadLine());
             for (int i = 2; i <= n; i++)
             {
-                fact = 1;
+                int fact = 1;
                 int count = 0;
                 for(int j = 2; j <= i; j++)
                 {
@@ -24,11 +24,11 @@ namespace Factor
                     {
                         count++;
                     }
-                    if (count >= 2)
+                    else if (count >= 2)
                     {
                         break;
                     }
-                    if (count < 2)
+                    else if (count < 2)
                     {
                         fact = fact * i;
                     }
