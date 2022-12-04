@@ -10,15 +10,19 @@ namespace Compute
     {
         public void ComQuoRemainder()
         {
-            Console.WriteLine()
+            Console.WriteLine("Enter a value as a divident :");
             int divident = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Enter a value as a divisor : ");
             int divisor = Convert.ToInt32(Console.ReadLine());
+            
             int quotient = divident / divisor;
             int remainder = divident % divisor;
-            Console.WriteLine("divident:{0}  Divisor:{1}", divident, divisor);
+            
+            Console.WriteLine("\n");
             Console.WriteLine("Quoteint: " + quotient);
             Console.WriteLine("Remainder: " + remainder);
-            Console.ReadLine();
+            
         }
     }
 }
