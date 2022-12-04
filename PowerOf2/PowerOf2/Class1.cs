@@ -17,9 +17,8 @@ namespace PowerOf2
             for (int i = 1; i <= n; i++)
             {
                 double p = Math.Pow(value, i);
-                Console.WriteLine("Power of 2 values are : ",p);
-                Console.ReadLine();
-                Console.WriteLine(p);
+                Console.WriteLine(" 2 to the power {0} is : {1} ",i,p);
+                
             }
         }
     }
